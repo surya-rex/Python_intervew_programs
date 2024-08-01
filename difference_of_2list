@@ -6,7 +6,7 @@ lis_2=[5,4,3,6,7]
 result=[]
 
 for one in lis_1:
-    if one in lis_2:
+    if one in lis_2 and one not in result:
         result.append(one)
 
 print(result)
