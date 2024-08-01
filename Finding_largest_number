@@ -1,0 +1,16 @@
+
+# Finding Largest number in a list
+
+lis=[1,2,3,4,5,8,9]
+
+largest=lis[0]
+
+second=0
+
+for x in lis:
+    if x > largest:
+        second=largest
+        largest=x
+
+print(largest)
+print(second)
