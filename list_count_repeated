@@ -1,0 +1,13 @@
+
+fruites=["apple","apple","orange","banana","banana"]
+
+count={}
+
+for x in fruites:
+    if x in count:
+        count[x]+=1
+    else:
+        count[x]=1
+
+for word,char in count.items():
+    print(word,char)
