@@ -1,0 +1,9 @@
+
+txt="welcome"
+
+reverse_txt=""
+
+for x in txt:
+    reverse_txt=x+reverse_txt
+
+print(reverse_txt)
