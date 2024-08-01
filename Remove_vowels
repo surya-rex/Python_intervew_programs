@@ -1,0 +1,14 @@
+
+# Removeing Vowels in a Paragraph
+
+para="computer"
+
+vowels="aeiou"
+
+new_para=""
+
+for char in para:
+    if char not in vowels:
+        new_para+=char
+
+print(new_para)
