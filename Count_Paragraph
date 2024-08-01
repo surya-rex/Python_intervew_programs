@@ -1,0 +1,31 @@
+
+#count word letter and repeating letters in a given Paragraph
+
+para="welcome to my computer world"
+
+#Count word
+
+split_word=para.split()
+
+count=0
+
+print("Total words : ",len(split_word))
+
+#Count Letters
+
+for char in para:
+    count+=1
+
+print("Total Letters : ",count)
+
+#Count Repeated Words
+
+count={}
+
+for x in split_word:
+    if x in count:
+        count[x]+=1
+    else:
+        count[x]=1
+
+print(count)
