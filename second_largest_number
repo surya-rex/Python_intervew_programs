@@ -1,0 +1,14 @@
+
+number=[30,40,50,20,10]
+
+largest=number[0]
+
+second=0
+
+for numbers in number:
+    if numbers > largest:
+        second=largest
+        largest=numbers
+
+print(second)
+
