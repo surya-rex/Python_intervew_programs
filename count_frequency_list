@@ -1,0 +1,15 @@
+
+elements = ["apple", "banana", "apple", "orange", "banana", "apple"]
+
+count={}
+
+for word in elements:
+    if word in count:
+        count[word]+=1
+    else:
+        count[word]=1
+
+print(count)
+
+for word , c in count.items():
+    print(word,c)
