@@ -1,31 +1,34 @@
 
-#count word letter and repeating letters in a given Paragraph
+# count word letter and frequency
 
-para="welcome to my computer world"
+para="w c c"
 
-#Count word
+no_space=para.replace(" ","")
 
-split_word=para.split()
+#count word
 
 count=0
 
-print("Total words : ",len(split_word))
+split_words=para.split()
 
-#Count Letters
+print(f"Total Words : ",len(split_words))
 
-for char in para:
+#count Letters
+
+for x in no_space:
     count+=1
 
-print("Total Letters : ",count)
+print("Total Letters",count)
 
-#Count Repeated Words
+# Count frequency of word
 
 count={}
 
-for x in split_word:
-    if x in count:
-        count[x]+=1
+for word in split_words:
+    if word in count:
+        count[word]+=1
     else:
-        count[x]=1
+        count[word]=1
 
-print(count)
+for word , c in count.items():
+    print(word , " : " , c)
