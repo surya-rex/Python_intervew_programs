@@ -1,0 +1,14 @@
+
+lis=["mam","sam","sas"]
+
+result=[]
+
+count=0
+
+for x in lis:
+    if x == x[::-1]:
+        result.append(x)
+        count+=1
+
+print(result)
+print(count)
